@@ -1,11 +1,12 @@
 To Deploy into OCP:
-_____________________________
-| app layer (foo app) |
+-----------------------------
+| app layer (foo app)       |
 | ------------------------- |
-| ops layer (middleware) |
+| ops layer (middleware)    |
 | ------------------------- |
-| busybox |
+| busybox                   |
 |___________________________|
+
 Base = busybox image from Dockerhub
 ops = middleware layer (a shell script)
 foo = application layer built from "ops" image
@@ -23,6 +24,7 @@ We can test the running foo application:
 $ curl foo-welcome.192.168.137.3.xip.io
 Hello foo ! Welcome to OpenShift 3
 ===================================================================================
+
 
 ###Hello World docker image###
 
