@@ -1,11 +1,11 @@
 To Deploy into OCP:
------------------------------
+|---------------------------|
 | app layer (foo app)       |
 | ------------------------- |
 | ops layer (middleware)    |
 | ------------------------- |
 | busybox                   |
-|___________________________|
+|---------------------------|
 
 Base = busybox image from Dockerhub
 ops = middleware layer (a shell script)
